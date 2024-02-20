@@ -22,12 +22,14 @@ function App() {
 
   return (
     <>
-      <h1>Welcome</h1>
+      <h1>Welcome </h1>
+      <h2>Enter your friend's WhatsApp number below </h2>
+
       <form action={"https://wa.me/" + contact} target="_bl" method="get">
         <input
           type="number"
           inputMode="numeric"
-          placeholder="Enter Contact's Number"
+          placeholder="Enter friends's number"
           // value={contact}
           onChange={(e) => setContact(e.target.value)}
         />
