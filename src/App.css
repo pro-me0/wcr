@@ -14,5 +14,8 @@ body{
 
 input{
   padding: 1em;
+  color: black;
+  border-radius: .5em;
+  border: 0;
   margin: .5em;
 }
