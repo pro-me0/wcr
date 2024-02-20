@@ -7,6 +7,11 @@
 body{
   background-image: url("/whatsappbackground1.jpg");
 }
+
+*{
+  color: white;
+}
+
 input{
   padding: 1em;
   margin: .5em;
