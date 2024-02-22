@@ -7,8 +7,12 @@ function App() {
     <>
       <h1>Welcome</h1>
       <h2>Enter your friend's WhatsApp number below to dive into their DMs</h2>
-      <form action={"https://wa.me/" + contact} target="_bl" method="get">
+      <form action={"https://wa.me/234" + contact} target="_bl" method="get">
+
+        <input type="text" value={"+234"} readOnly className="ro"/>
+
         <input
+        autoFocus
           type="number"
           inputMode="numeric"
           placeholder="Enter friends's number"
