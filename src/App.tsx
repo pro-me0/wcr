@@ -2,7 +2,10 @@
 import { useState } from "react";
 import "./App.css";
 function App() {
-  const [contact, setContact] = useState("");
+  const
+  [contact, setContact] = useState("")
+  // [val, setVal] = useState("")
+  ;
   return (
     <>
       <h1>Welcome</h1>
@@ -16,7 +19,24 @@ function App() {
           type="number"
           inputMode="numeric"
           placeholder="Enter friends's number"
-          onChange={(e) => setContact(e.target.value)}
+          // value={val}
+          onChange={(e) => {
+            const value = e.target.value
+            setContact(value);
+
+            if(value.startsWith("0")){
+              // setVal("")
+              alert("Your first input cannot be '0'")
+              e.target.value = ""
+            }else{
+              /* const formattedNumber = value.replace(value.charAt(2), value.charAt(2) + " ");
+              
+              // formattedNumber = value.replace(value.charAt(6), value.charAt(6) + " ");
+
+
+              e.target.value = formattedNumber */
+            }
+          }}
         />
         <input type="submit" value="Enter their Dm" />
       </form>
