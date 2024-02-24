@@ -5,7 +5,7 @@ import { countryCodes } from "./utils/countryCodes";
 
 function App() {
   const [contact, setContact] = useState(""),
-    [countryCode, setCountryCode] = useState("");
+    [countryCode, setCountryCode] = useState("+234");
   // [val, setVal] = useState("")
   return (
     <>
@@ -54,6 +54,7 @@ function App() {
               value = value.replace("0", "");
               setContact(value);
             } else {
+              setContact(value);
               /* const formattedNumber = value.replace(value.charAt(2), value.charAt(2) + " ");
               
               // formattedNumber = value.replace(value.charAt(6), value.charAt(6) + " ");
