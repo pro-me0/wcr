@@ -12,28 +12,29 @@ body{
   color: white;
 }
 
-input{
+input, .countryCode{
   padding: 1em;
   border-radius: .5em;
-  border: 1px solid white;
+  border: 1px solid green;
   margin: .5em;
   background-color: black;
   color: white;
 
 }
-input:first-of-type{
-  width: 2.5em;
+.countryCode{
+  width: 5rem;
+  outline: none;
   padding-right: 0;
   margin-right: 0;
   border-right: 0;
   border-radius: .5em 0 0 .5em ;
 }
-input:nth-of-type(2){
+.number{
   padding-left: 0;
   border-radius: 0 .5em .5em 0;
-  border-left: 0;
+  border-left: 0px;
   margin-left: 0;
 }
-input:nth-of-type(2):focus{
+.number:focus, .countryCode:focus{
   outline: none;
 }
