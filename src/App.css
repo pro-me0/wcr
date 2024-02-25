@@ -8,14 +8,9 @@ body{
   background-image: url("/whatsappbackground1.jpg");
 }
 
-@font-face {
-  font-family: 'MyCustomFont';
-  src : url('KodeMono-VariableFont_wght.ttf') format('truetype');
-}
-
 *{
   color: white;
-  font-family: "MyCustomFont", sans-serif;
+  font-family: monospace;
 }
 
 input, .countryCode{
