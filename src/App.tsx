@@ -32,7 +32,7 @@ function App() {
                 aria-placeholder={country.dial_code}
                 value={country.dial_code}
               >
-                {country.name + " | " + country.dial_code}
+                {country.name + " " + country.dial_code}
               </option>
             ) : (
               <option value={country.dial_code} key={country.name}>
