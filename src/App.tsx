@@ -27,14 +27,15 @@ function App() {
           {countryCodes.map((country) => {
             return country.name == "Nigeria" ? (
               <option
-                aria-placeholder={country.dial_code}
+                key={country.name}
                 selected
+                aria-placeholder={country.dial_code}
                 value={country.dial_code}
               >
                 {country.name + " | " + country.dial_code}
               </option>
             ) : (
-              <option value={country.dial_code}>
+              <option value={country.dial_code} key={country.name}>
                 {country.name + " | " + country.dial_code}
               </option>
             );

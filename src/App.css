@@ -8,8 +8,14 @@ body{
   background-image: url("/whatsappbackground1.jpg");
 }
 
+@font-face {
+  font-family: 'MyCustomFont';
+  src : url('KodeMono-VariableFont_wght.ttf') format('truetype');
+}
+
 *{
   color: white;
+  font-family: "MyCustomFont";
 }
 
 input, .countryCode{
@@ -22,7 +28,7 @@ input, .countryCode{
 
 }
 .countryCode{
-  width: 5rem;
+  width: 6rem;
   outline: none;
   padding-right: 0;
   margin-right: 0;
