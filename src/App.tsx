@@ -9,7 +9,7 @@ function App() {
   // [val, setVal] = useState("")
   return (
     <>
-      <h1>Welcome</h1>
+      <h1>WhatsApp DM</h1>
       <h2>Enter your friend's WhatsApp number below to dive into their DMs</h2>
       <form
         action={`https://wa.me/${countryCode + contact}`}
